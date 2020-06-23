@@ -10,6 +10,11 @@ let api = require('./routes/api');
 // mount routes
 app.use('/api', api);
 
+// route for site root 
+app.get('/', (req,res) => {
+    res.send(`Append /api to the url to access my api `);
+});
+
 // CONNECTING TO A MONGO DB DATABASE
 // reference the mongoose module 
 let mongoose = require('mongoose');
