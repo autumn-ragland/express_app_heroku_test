@@ -30,3 +30,5 @@ app.get('/', (req,res) => {
     res.send(`Append /api to the url to access my api `);
 });
 ```
+
+Access this deployed express app here : https://express-residents-test.herokuapp.com/
