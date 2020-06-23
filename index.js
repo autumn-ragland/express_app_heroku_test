@@ -3,7 +3,7 @@ let express = require('express');
 // create server
 let app = express();
 // variable for port number
-let port = 8000;
+let port = process.env.PORT || 8000;;
 
 // import router module
 let api = require('./routes/api');
@@ -14,7 +14,7 @@ app.use('/api', api);
 // reference the mongoose module 
 let mongoose = require('mongoose');
 // connect to database
-let mongoDB = 'mongodb+srv://admin:C0d3Cr3w@cluster0-ueqkv.mongodb.net/cs_database_4?retryWrites=true&w=majority'
+let mongoDB = process.env.MONGODB_URI || 'mongodb+srv://admin:C0d3Cr3w@cluster0-ueqkv.mongodb.net/cs_database_4?retryWrites=true&w=majority'
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 // connection error message
 let db = mongoose.connection;
