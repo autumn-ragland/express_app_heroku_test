@@ -1,7 +1,6 @@
-# express_app_heroku_test
-## NodeJS Express App to Test Heroku Deployment 
+# NodeJS Express App to Test Heroku Deployment 
 
-## Express Deployment Steps
+### Express Deployment Steps
 1. Add `"start": "node index.js"` to `scripts` property in `package.json` file
 2. Add the code snippet below to the `package.json` file
 ```JS
@@ -30,5 +29,5 @@ app.get('/', (req,res) => {
     res.send(`Append /api to the url to access my api `);
 });
 ```
-
+<hr>  
 Access this deployed express app here : https://express-residents-test.herokuapp.com/
