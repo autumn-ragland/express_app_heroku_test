@@ -23,7 +23,7 @@ let mongoDB = process.env.MONGODB_URI || YOURCONNECTIONSTRING
 6. If step 5 is successful, run `git push heroku master` to deploy changes
 7. Run `heroku open` to view running site
 
-Optional : Send a string at the site root from the entry point file so that the response is displayed instead of `CANNOT GET /`
+Optional : Send a string or HTML file at the site root from the entry point file so that the response is displayed instead of `CANNOT GET /`
 ```JS
 // route for site root 
 app.get('/', (req,res) => {
