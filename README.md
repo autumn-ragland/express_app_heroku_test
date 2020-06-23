@@ -10,7 +10,7 @@
     "node": "12.18.1"
   }
 ```
-3. Update the port number specified in the entry point or config keys file to allow for any available port
+3. Update the port number specified in the entry point or config keys file
 ```JS
 let port = process.env.PORT || 8000;
 ```
